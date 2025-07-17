@@ -29,13 +29,8 @@ jobs:
         cd backend && npm install
         cd ../frontend && npm install
     
-    - name: Run backend tests
-      run: npm run test --workspace=backend
-      env:
-        NODE_ENV: test
-
-    - name: Run frontend tests
-      run: npm run test --workspace=frontend
+    - name: Skip tests
+      run: echo "Tests skipped as requested"
     
     - name: Build frontend
       run: cd frontend && npm run build

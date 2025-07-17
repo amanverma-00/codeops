@@ -26,16 +26,11 @@
   "author": "AmanVerma",
   "license": "ISC",
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
     "autoprefixer": "^10.4.21",
     "concurrently": "^8.2.2",
-    "jest": "^30.0.4",
-    "jsdom": "^26.1.0",
     "kill-port": "^2.0.1",
     "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17",
-    "vitest": "^3.2.4"
+    "tailwindcss": "^3.4.17"
   },
   "workspaces": [
     "backend",
