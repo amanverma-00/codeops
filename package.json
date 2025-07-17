@@ -1,0 +1,38 @@
+{
+  "name": "codeops-leetcode-clone",
+  "version": "1.0.0",
+  "description": "Full-stack coding platform with video solutions and AI assistance",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start": "cd backend && npm start",
+    "build": "cd frontend && npm run build",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "kill-port": "npx kill-port 3000",
+    "clean-start": "npm run kill-port && npm run dev:backend"
+  },
+  "keywords": [
+    "leetcode",
+    "coding",
+    "platform",
+    "video",
+    "solutions",
+    "ai",
+    "chat"
+  ],
+  "author": "AmanVerma",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^8.2.2",
+    "kill-port": "^2.0.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
