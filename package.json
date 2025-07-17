@@ -11,7 +11,8 @@
     "build": "cd frontend && npm run build",
     "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
     "kill-port": "npx kill-port 3000",
-    "clean-start": "npm run kill-port && npm run dev:backend"
+    "clean-start": "npm run kill-port && npm run dev:backend",
+    "test": "jest"
   },
   "keywords": [
     "leetcode",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "concurrently": "^8.2.2",
+    "jest": "^30.0.4",
     "kill-port": "^2.0.1",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
