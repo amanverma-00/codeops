@@ -12,7 +12,7 @@
     "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
     "kill-port": "npx kill-port 3000",
     "clean-start": "npm run kill-port && npm run dev:backend",
-    "test": "jest"
+    "test": "echo \"Use npm test in backend/ or frontend/ directories\" && exit 0"
   },
   "keywords": [
     "leetcode",
