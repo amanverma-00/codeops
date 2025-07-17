@@ -26,6 +26,7 @@
   "author": "AmanVerma",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
     "autoprefixer": "^10.4.21",
     "concurrently": "^8.2.2",
     "kill-port": "^2.0.1",
